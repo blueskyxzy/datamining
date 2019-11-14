@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 # ——————————————————导入数据——————————————————————
-f = open('stock_dataset.csv')
+f = open('dataset/stock_dataset.csv')
 df = pd.read_csv(f)  # 读入股票数据
 data = np.array(df['最高价'])  # 获取最高价序列
 data = data[::-1]  # 反转，使数据按照日期先后顺序排列
